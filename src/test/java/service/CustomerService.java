@@ -5,5 +5,7 @@ import java.util.List;
 import model.Customer;
 
 public interface CustomerService {
+	
 	public List<Customer> findAll();
+	
 }
