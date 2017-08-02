@@ -9,7 +9,8 @@
 
 	<bean name="customerService"
 			class="service.CustomerServiceImp">
-		<property name="customerRepository" ref="foo" />
+<!-- 		<property name="customerRepository" ref="foo" /> -->
+		<constructor-arg index="0" ref="foo"></constructor-arg>
 	</bean>
 
 </beans>

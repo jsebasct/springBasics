@@ -9,6 +9,14 @@ public class CustomerServiceImp implements CustomerService {
 
 	private CustomerRepository customerRepository;// = new HibernateCustomerRepositoryImpl();
 	
+	public CustomerServiceImp() {
+		
+	}
+	
+	public CustomerServiceImp(CustomerRepository customerRepository) {
+		this.customerRepository = customerRepository;
+	}
+	
 	@Override
 	public List<Customer> findAll() {
 		return customerRepository.findAll();
