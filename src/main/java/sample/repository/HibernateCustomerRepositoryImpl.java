@@ -1,10 +1,13 @@
-package repository;
+package sample.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import model.Customer;
+import org.springframework.stereotype.Repository;
 
+import sample.model.Customer;
+
+@Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 	/* (non-Javadoc)

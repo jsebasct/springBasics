@@ -1,8 +1,8 @@
-package repository;
+package sample.repository;
 
 import java.util.List;
 
-import model.Customer;
+import sample.model.Customer;
 
 public interface CustomerRepository {
 
