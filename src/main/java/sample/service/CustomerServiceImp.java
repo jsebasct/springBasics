@@ -8,16 +8,17 @@ import org.springframework.stereotype.Service;
 import sample.model.Customer;
 import sample.repository.CustomerRepository;
 
-@Service("customerService")
+//@Service("customerService")
 public class CustomerServiceImp implements CustomerService {
 
 	// @Autowired
-	private CustomerRepository customerRepository;// = new
-													// HibernateCustomerRepositoryImpl();
+	private CustomerRepository customerRepository;
 
-	@Autowired
+	// @Autowired
+	public CustomerServiceImp() {
+	}
+	
 	public CustomerServiceImp(CustomerRepository customerRepository) {
-		System.out.println("Using constrcutor inyection");
 		this.customerRepository = customerRepository;
 	}
 
@@ -28,10 +29,9 @@ public class CustomerServiceImp implements CustomerService {
 	}
 
 	// @Autowired
-	// public void setCustomerRepository(CustomerRepository customerRepository)
-	// {
-	// System.out.print("Throw setter inyection");
-	// this.customerRepository = customerRepository;
-	// }
+//	public void setCustomerRepository(CustomerRepository customerRepository) {
+//		System.out.println("Throw setter inyection");
+//		this.customerRepository = customerRepository;
+//	}
 
 }
