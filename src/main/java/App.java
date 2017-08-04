@@ -12,6 +12,7 @@ public class App {
 		
 		CustomerService cs = appContext.getBean("customerService", CustomerService.class);
 		
+		
 		System.out.println(cs.findAll().get(0).getFirstname());
 	}
 
