@@ -3,6 +3,7 @@ package sample.repository;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
 import sample.model.Customer;
@@ -10,6 +11,7 @@ import sample.model.Customer;
 @Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
+	@Value("${dbUsername}")
 	private String dbUserName;
 	
 	/* (non-Javadoc)
