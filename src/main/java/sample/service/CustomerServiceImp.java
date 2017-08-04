@@ -11,7 +11,7 @@ import sample.model.Customer;
 import sample.repository.CustomerRepository;
 
 @Service("customerService")
-@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CustomerServiceImp implements CustomerService {
 
 	// @Autowired
